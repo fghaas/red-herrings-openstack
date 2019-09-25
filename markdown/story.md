@@ -62,6 +62,7 @@ says: “Я врач. Вы в шведской больнице.” (Ya vrach, v
 bolnitse) — “I am a doctor, you are in a Swedish hospital.”
 
 
+<!-- .slide: data-background-image="images/roundel.svg" data-background-size="contain" -->
 ## A Soviet pilot <!-- .element: class="hidden" --> 
 
 <!-- Note -->
