@@ -11,8 +11,10 @@ Florian Haas | [@xahteiwi](https://twitter.com/xahteiwi)
 
  
 <!-- Note --> 
-OpenStack’s complexity comes with operational challenges. And in
-situations where OpenStack misbehaves, it is frequently non-trivial to
-find the actual cause of an issue. This talk includes several examples
-of red herrings in OpenStack, and suggestions for spotting and
-avoiding them.
+From description _(don’t recite):_
+
+> OpenStack’s complexity comes with operational challenges. And in
+> situations where OpenStack misbehaves, it is frequently non-trivial
+> to find the actual cause of an issue. This talk includes several
+> examples of red herrings in OpenStack, and suggestions for spotting
+> and avoiding them.
