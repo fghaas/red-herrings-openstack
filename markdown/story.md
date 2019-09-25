@@ -1,9 +1,11 @@
+## October 10, 1975 <!-- .element: class="hidden" --> 
+
+<!-- Note -->
 Who in here considers themselves a history buff? Occasional hobby
 historians in the room? (Don’t worry, I won’t quiz you on anything.)
 Cold War buffs, perhaps? I’m going to start by introducing you to an
 interesting event in Cold War history, that very very few people have
 even heard of. And it even happened just 300km from here!
-
 
 The day is October 10, 1975 — 44 years ago almost to the day. And on
 this autumn Friday, a young doctor, fresh out of medical school, is on
@@ -14,12 +16,18 @@ doctors and nurses — are down in the hospital cafeteria for
 lunch. Everything looks and feels very routine.
 
 
+## Phone call <!-- .element: class="hidden" --> 
+
+<!-- Note -->
 And then suddenly, the phone rings. The hospital is being advised by
 emergency responders that a plane crash has occurred in the vicinity,
 and that the hospital will imminently receive the first casualties,
 by helicopter.
 
 
+## Grab the binders <!-- .element: class="hidden" --> 
+
+<!-- Note -->
 As soon as the young doctor hangs up, he grabs a nurse and they race
 over to the shelf with the binders containing the emergency
 procedures, because they now have to immediately prepare the ER for a
@@ -31,6 +39,9 @@ later the first patient is wheeled through the ER doors on a
 stretcher.
 
 
+## First patient in <!-- .element: class="hidden" --> 
+
+<!-- Note -->
 And the doctor immediately starts evaluating the patient. He is
 conscious and breathing, but he’s not in great shape: he is shaking
 violently, he is incoherent, and when the doctor addresses him he
@@ -38,7 +49,6 @@ can’t verbally respond — all he utters is a sound like /ʒʒʒʒʒʒʒ/. The
 doctor immediately recognizes this as symptoms consistent with
 cerebral trauma; the patient evidently has a head injury and could
 collapse any moment.
-
 
 As he’s examined the patient, the doctor has removed the patient’s
 life jacket (it was a plane crash into water), dropping it on the
@@ -52,6 +62,9 @@ says: “Я врач. Вы в шведской больнице.” (Ya vrach, v
 bolnitse) — “I am a doctor, you are in a Swedish hospital.”
 
 
+## A Soviet pilot <!-- .element: class="hidden" --> 
+
+<!-- Note -->
 And at this, the pilot’s eyes widen in horror. He’s still not
 responding, but to the doctor the picture is clear: this is a Soviet
 pilot who is understandably terrified that he’s been shot down over
@@ -61,6 +74,9 @@ Union. And *that,* in turn, means that we’re probably in the opening
 minutes of World War III (remember, this is 1975).
 
 
+## Blood loss <!-- .element: class="hidden" --> 
+
+<!-- Note -->
 But as he momentarily looks down, he realizes that he has an urgent
 problem on his hands with this patient: he is standing in a red puddle
 that has formed on the floor. So this patient evidently doesn’t just
@@ -68,6 +84,10 @@ suffer from cerebral trauma, but he also has an open wound, possibly
 an arterial bleeding _that they haven’t found yet._ So they need to
 get his flight suit off of him as soon as possible.
 
+
+## A problem with the flight suit <!-- .element: class="hidden" --> 
+
+<!-- Note -->
 Unfortunately, the doctor isn’t very accustomed to patients wearing
 military flight suits, so he’s running into a snag: he simply can’t
 find the right zippers or buckles to get the suit off of the
@@ -75,13 +95,16 @@ pilot. Whatever he tries, all he manages to open is one of the many
 pockets the suit has. So, he grabs a pair of scissors to cut the suit
 open.
 
-
 Now it’s something like 90 seconds after the call, and the senior
 doctors and nurses finally pour in from where they had spent their
 lunch break. And just as he’s about to cut into the flight suit, a
 nurse grabs stops him and says “don’t do that, that’s a G-suit, those
 are 10,000 kronor apiece” (in 1975 kronor, that’s about 57,000 today).
 
+
+## Paint, not blood <!-- .element: class="hidden" --> 
+
+<!-- Note -->
 And the doctor looks at her, momentarily befuddled. She adds, “and
 you may want to step off his rescue jacket; looks like you popped the
 sea-dye marker cartridge and you’re making a mess all over the floor.”
@@ -89,13 +112,73 @@ sea-dye marker cartridge and you’re making a mess all over the floor.”
 https://www.youtube.com/watch?v=EFlh61jRnf0
 
 After which she expertly strips the patient of his flight suit, and
-the evaluation of the patient continues. The patient which, it turns
-out, is a Swedish air force pilot who was forced to eject from his
-Saab AJ 37 Viggen strike fighter on a routine training flight over the
-Baltic sea because of a structural failure — a _wing fracture,_ a
-problem which plagued the airframe in the mid-70s — and who was pulled
-out of the 8°C water by a search-and-rescue team. Which flew him
-promptly to the nearest hospital because he was suffering from a
-rather bad case of hypothermia, the symptoms of which include
+the evaluation of the patient continues. 
+
+The patient who, it turns out, is a Swedish air force pilot who was
+forced to eject from his Saab AJ 37 Viggen strike fighter, tail
+number 37005. He had been on a routine training flight over the Baltic
+sea, when lost control of his plane to a structural failure — a _wing
+fracture,_ a problem which plagued the airframe in the mid-70s — and
+who was pulled out of the 8°C water by a search-and-rescue team. Which
+flew him promptly to the nearest hospital because he was suffering
+from a rather bad case of hypothermia, the symptoms of which include
 incoherence, slurred speech, and violent shivers.
 
+
+## Nothing but wrong assumptions <!-- .element: class="hidden" --> 
+
+<!-- Note -->
+And the reason I’m telling you this is that absolutely every single
+assumption the doctor had made was wrong, with one exception: there
+was, actually, a plane crash. But:
+
+* It involved a single-seat military aircraft, rather than a
+  commercial airliner.
+* Thus, mass casualty treatment was never required — they were all
+  dealing with a single accident survivor all along.
+* The patient wasn’t suffering from cerebral trauma, but hypothermia.
+* The patient wasn’t trying to speak Russian; he simply couldn’t get
+  any words out — again, due to his hypothermia.
+* The patient wasn’t suffering from sudden catastrophic bleeding,
+  instead the red puddle came from a fluorescent sea-dye marker
+  cartridge (those look green when dissolved, but bright red when
+  concentrated).
+
+And of course, Sweden was not at war with the Soviet Union, and
+nuclear armageddon wasn’t imminent.
+
+
+## Lessons learned <!-- .element: class="hidden" --> 
+
+<!-- Note -->
+Thankfully for the doctor, none of the decisions he made based on his
+wildly inaccurate assumptions actually harmed anyone — other than, of
+course, scaring the living daylights out of Swedish Air Force Reserve
+Lt Harald Gatel, who after what must have already been the worst day
+of his flying career, came to to find out that rather than being pulled
+from the Baltic Sea by his collegues, he’d been presumably abducted by
+a team of Spetsnaz and spirited away to somewhere where the doctors
+only spoke Russian.
+
+And he reflected later in life that he was actually quite thankful for
+this inconsequential mishap early in his career, as it profoundly and
+permanently influenced his later thinking: always challenge your own
+assumptions.
+
+
+## What became of the doctor <!-- .element: class="hidden" --> 
+
+<!-- Note -->
+The young doctor incidentally became a very famous man with this
+approach: on a mission for Doctors Without Borders in Mozambique in
+the early 1980s, he discovered a working prevention mechanism for
+konzo (bound legs disease), he became professor of International
+Health at Karolinska Institute in 1995. His name is Hans Rosling, he
+left us much too soon in 2017.
+  
+
+## Lets learn from Hans! <!-- .element: class="hidden" --> 
+
+<!-- Note -->
+So! Let’s take Hans’ advice and apply it to operating and running
+OpenStack: let’s always challenge our own assumptions.
