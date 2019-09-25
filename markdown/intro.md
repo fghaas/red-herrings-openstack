@@ -3,6 +3,10 @@ Red Herrings in OpenStack
 
 * * *
 
+Open Infra Days Nordics, 2019-10-03
+
+* * *
+
 Florian Haas | [@xahteiwi](https://twitter.com/xahteiwi)
 
  
