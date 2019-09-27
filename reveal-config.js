@@ -4,7 +4,7 @@ Reveal.initialize({
 
     controls: false,
 
-    progress: true,
+    progress: false,
     history: true,
     center: true,
     showNotes: false,
