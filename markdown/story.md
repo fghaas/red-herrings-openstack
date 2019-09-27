@@ -1,22 +1,32 @@
-## October 10, 1975 <!-- .element: class="hidden" --> 
+<!-- .slide: data-background-image="images/time-machine.png" data-background-size="cover" -->
+# Time machine <!-- .element: class="hidden" -->
 
 <!-- Note -->
-Who in here considers themselves a history buff? Occasional hobby
-historians in the room? (Don’t worry, I won’t quiz you on anything.)
-Cold War buffs, perhaps? I’m going to start by introducing you to an
-interesting event in Cold War history, that very very few people have
-even heard of. And it even happened just 300km from here!
-
-The day is October 10, 1975 — 44 years ago almost to the day. And on
-this autumn Friday, a young doctor, fresh out of medical school, is on
-shift in the emergencies and accidents ward in the hospital of a
-Swedish coastal town of about 35,000 people. It’s been a very calm
-morning, and it’s now lunchtime and most of the senior personnel –
-doctors and nurses — are down in the hospital cafeteria for
-lunch. Everything looks and feels very routine.
+Step with me into a time machine. A contraption that can transport you
+to any event in spacetime, which in this case is 44 years ago, and
+just under 300km away from here.
 
 
-## Phone call <!-- .element: class="hidden" --> 
+## October 10, 1975
+
+<!-- Note -->
+The day is October 10, 1975.
+
+
+<!-- .slide: data-background-image="images/doctor.png" data-background-size="contain" -->
+## Young doc on shift <!-- .element: class="hidden" -->
+
+<!-- Note -->
+And on this autumn Friday, a young doctor, fresh out of medical
+school, is on shift in the emergencies and accidents ward in the
+hospital of a Swedish coastal town of about 35,000 people. It’s been a
+very calm morning, and it’s now lunchtime and most of the senior
+personnel – doctors and nurses — are down in the hospital cafeteria
+for lunch. Everything looks and feels very routine.
+
+
+<!-- .slide: data-background-image="images/phone.jpg" data-background-size="cover" -->
+## Phone call <!-- .element: class="hidden" -->
 
 <!-- Note -->
 And then suddenly, the phone rings. The hospital is being advised by
@@ -24,10 +34,6 @@ emergency responders that a plane crash has occurred in the vicinity,
 and that the hospital will imminently receive the first casualties,
 by helicopter.
 
-
-## Grab the binders <!-- .element: class="hidden" --> 
-
-<!-- Note -->
 As soon as the young doctor hangs up, he grabs a nurse and they race
 over to the shelf with the binders containing the emergency
 procedures, because they now have to immediately prepare the ER for a
@@ -39,6 +45,7 @@ later the first patient is wheeled through the ER doors on a
 stretcher.
 
 
+<!-- .slide: data-background-image="images/emergency-room.jpg" data-background-size="cover" -->
 ## First patient in <!-- .element: class="hidden" --> 
 
 <!-- Note -->
@@ -63,7 +70,7 @@ bolnitse) — “I am a doctor, you are in a Swedish hospital.”
 
 
 <!-- .slide: data-background-image="images/roundel.svg" data-background-size="contain" -->
-## A Soviet pilot <!-- .element: class="hidden" --> 
+## A Soviet pilot <!-- .element: class="hidden" -->
 
 <!-- Note -->
 And at this, the pilot’s eyes widen in horror. He’s still not
@@ -75,7 +82,8 @@ Union. And *that,* in turn, means that we’re probably in the opening
 minutes of World War III (remember, this is 1975).
 
 
-## Blood loss <!-- .element: class="hidden" --> 
+<!-- .slide: data-background-image="images/blood.jpg" data-background-size="cover" -->
+## Blood loss <!-- .element: class="hidden" -->
 
 <!-- Note -->
 But as he momentarily looks down, he realizes that he has an urgent
@@ -86,6 +94,7 @@ an arterial bleeding _that they haven’t found yet._ So they need to
 get his flight suit off of him as soon as possible.
 
 
+<!-- .slide: data-background-image="images/g-suit.jpg" data-background-color="black" data-background-size="contain" -->
 ## A problem with the flight suit <!-- .element: class="hidden" --> 
 
 <!-- Note -->
@@ -102,19 +111,33 @@ lunch break. And just as he’s about to cut into the flight suit, a
 nurse grabs stops him and says “don’t do that, that’s a G-suit, those
 are 10,000 kronor apiece” (in 1975 kronor, that’s about 57,000 today).
 
-
-## Paint, not blood <!-- .element: class="hidden" --> 
-
-<!-- Note -->
 And the doctor looks at her, momentarily befuddled. She adds, “and
 you may want to step off his rescue jacket; looks like you popped the
 sea-dye marker cartridge and you’re making a mess all over the floor.”
 
+
+<!-- .slide: data-background-image="https://airandspace.si.edu/webimages/collections/full/A19790681000d3.JPG" data-background-size="cover" -->
+## Paint, not blood <!-- .element: class="hidden" -->
+
+<!-- Note -->
 https://www.youtube.com/watch?v=EFlh61jRnf0
 
 After which she expertly strips the patient of his flight suit, and
-the evaluation of the patient continues. 
+the evaluation of the patient continues.
 
+* Image credit: [NASA Johnson Space
+  Center](https://www.nasa.gov/centers/johnson/home/index.html) and
+  [Smithsonian Institution, National Air and Space
+  Museum](https://airandspace.si.edu/).
+* Source: [Sea Dye Marker Kit,
+  Apollo](https://airandspace.si.edu/collection-objects/sea-dye-marker-kit-apollo)
+* License: Permitted use per SI [Terms of Use](https://www.si.edu/termsofuse/)
+
+
+<!-- .slide: data-background-iframe="https://aviation-safety.net/wikibase/60074" data-background-size="contain" -->
+## Accident record <!-- .element: class="hidden" -->
+
+<!-- Note -->
 The patient who, it turns out, is a Swedish air force pilot who was
 forced to eject from his Saab AJ 37 Viggen strike fighter, tail
 number 37005. He had been on a routine training flight over the Baltic
@@ -126,7 +149,8 @@ from a rather bad case of hypothermia, the symptoms of which include
 incoherence, slurred speech, and violent shivers.
 
 
-## Nothing but wrong assumptions <!-- .element: class="hidden" --> 
+<!-- .slide: data-background-color="black" data-background-size="contain" -->
+## Nothing but wrong assumptions <!-- .element: class="hidden" -->
 
 <!-- Note -->
 And the reason I’m telling you this is that absolutely every single
@@ -149,7 +173,8 @@ And of course, Sweden was not at war with the Soviet Union, and
 nuclear armageddon wasn’t imminent.
 
 
-## Lessons learned <!-- .element: class="hidden" --> 
+<!-- .slide: data-background-color="black" data-background-size="contain" -->
+## Lessons learned <!-- .element: class="hidden" -->
 
 <!-- Note -->
 Thankfully for the doctor, none of the decisions he made based on his
@@ -167,6 +192,7 @@ permanently influenced his later thinking: always challenge your own
 assumptions.
 
 
+<!-- .slide: data-background-color="black" data-background-size="contain" -->
 ## What became of the doctor <!-- .element: class="hidden" -->
 
 <!-- Note -->
@@ -174,11 +200,20 @@ The young doctor incidentally became a very famous man with this
 approach: on a mission for Doctors Without Borders in Mozambique in
 the early 1980s, he discovered a working prevention mechanism for
 konzo (bound legs disease), he became professor of International
-Health at Karolinska Institute in 1995. His name is Hans Rosling, he
-left us much too soon in 2017.
+Health at Karolinska Institute in 1995.
 
 
-## Let’s learn from Hans! <!-- .element: class="hidden" -->
+<!-- .slide: data-background-image="images/hans-rosling-2.jpg" data-background-color="black" data-background-size="cover" -->
+## Hans Rosling
+
+1948 – 2017
+
+<!-- Note -->
+His name is Hans Rosling, he left us much too soon in 2017.
+
+
+<!-- .slide: data-background-image="images/openstack-logo.svg" data-background-size="contain" -->
+## OpenStack <!-- .element: class="hidden" -->
 
 <!-- Note -->
 So! Let’s take Hans’ advice and apply it to operating and running
