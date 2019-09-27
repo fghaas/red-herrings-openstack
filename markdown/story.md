@@ -167,7 +167,7 @@ permanently influenced his later thinking: always challenge your own
 assumptions.
 
 
-## What became of the doctor <!-- .element: class="hidden" --> 
+## What became of the doctor <!-- .element: class="hidden" -->
 
 <!-- Note -->
 The young doctor incidentally became a very famous man with this
@@ -176,9 +176,9 @@ the early 1980s, he discovered a working prevention mechanism for
 konzo (bound legs disease), he became professor of International
 Health at Karolinska Institute in 1995. His name is Hans Rosling, he
 left us much too soon in 2017.
-  
 
-## Lets learn from Hans! <!-- .element: class="hidden" --> 
+
+## Let’s learn from Hans! <!-- .element: class="hidden" -->
 
 <!-- Note -->
 So! Let’s take Hans’ advice and apply it to operating and running
