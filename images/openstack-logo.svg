@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg969"
+   version="1.1"
+   viewBox="0 0 58.770645 57.720257"
+   height="57.720257mm"
+   width="58.770645mm">
+  <defs
+     id="defs963" />
+  <metadata
+     id="metadata966">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(377.12342,-9.604158)"
+     id="layer1">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,-372.12342,14.604158)"
+       style="display:inline;fill:#ed1944;fill-opacity:1"
+       id="g65698-4"
+       class="cls-1">
+      <path
+         style="fill:#ed1944;fill-opacity:1"
+         id="path65690-1"
+         transform="translate(-294.67,-215.24)"
+         d="m 461.82,215.24 h -150 a 17.17,17.17 0 0 0 -17.12,17.12 v 40.35 h 41.61 v -6.59 a 9.26,9.26 0 0 1 9.26,-9.26 h 82.53 a 9.26,9.26 0 0 1 9.26,9.26 v 6.59 H 479 v -40.35 a 17.18,17.18 0 0 0 -17.18,-17.12 z"
+         class="cls-2" />
+      <path
+         style="fill:#ed1944;fill-opacity:1"
+         id="path65692-1"
+         transform="translate(-294.67,-215.24)"
+         d="m 437.33,344.72 a 9.27,9.27 0 0 1 -9.26,9.26 h -82.53 a 9.27,9.27 0 0 1 -9.26,-9.26 v -6.59 h -41.61 v 40.34 a 17.17,17.17 0 0 0 17.12,17.13 h 150 A 17.18,17.18 0 0 0 479,378.47 v -40.34 h -41.67 z"
+         class="cls-2" />
+      <rect
+         style="fill:#ed1944;fill-opacity:1"
+         id="rect65694-9"
+         height="41.619999"
+         width="41.619999"
+         y="69.370003"
+         class="cls-2"
+         x="0" />
+      <rect
+         style="fill:#ed1944;fill-opacity:1"
+         id="rect65696-1"
+         height="41.619999"
+         width="41.619999"
+         y="69.370003"
+         x="142.66"
+         class="cls-2" />
+    </g>
+  </g>
+</svg>
