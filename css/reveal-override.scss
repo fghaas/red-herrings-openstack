@@ -3,24 +3,61 @@
    "white" theme.
 */
 
+body:after {
+    content: '@xahteiwi';
+    opacity: 0.5;
+    font-size: 200%;
+    font-family: "Source Sans Pro", sans-serif;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+
 .reveal {
+    .slides {
+	section[data-background-color=black] {
+	    * {
+		text-stroke: 1px black;
+		text-shadow:
+		3px 3px 0 #000,
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000 !important;
+		color: white !important;
+	    }
+	}
+    }
+
     h3, h4, h5, h6 {
 	text-transform: none;
     }
 
     .fragment {
-	opacity: 0.3 !important;
-    }
-
-    .current-fragment {
-	opacity: 1 !important;
+	.visible {
+	    opacity: 0.3 !important;
+	}
+	.current-fragment {
+	    opacity: 1 !important;
+	}
     }
 
     .hidden {
-	display: none !important;
+	display: none
+    }
+
+    .overview {
+	.hidden {
+	    display: inherit;
+	}
     }
 
     td, th {
 	font-size: 200%;
     }
+
+    iframe {
+	border: none;
+    }
+
 }
