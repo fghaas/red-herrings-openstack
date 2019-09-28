@@ -1,7 +1,7 @@
 # Heat templates and encoding <!-- .element: class="hidden" -->
 
 <!-- Note -->
-My third herring for you has to do with Heat templates. 
+My third red herring for you has to do with Heat templates.
 
 
 ## Encoding error <!-- .element: class="hidden" -->
@@ -19,6 +19,10 @@ And the additional information that we are getting here is pretty
 useless. We’re given an exact character that Heat is complaining
 about, but that one is definitely not incorrectly encoded.
 
+
+## A regression?
+
+<!-- Note -->
 The funny part about this one is that I ran into it without making any
 changes to my template, which had previously worked quite all
 right. The only thing that *had* changed, when I first saw this
@@ -31,8 +35,8 @@ So, surely this is a regression that somehow slipped past all the
 gates and CI checks?
 
 Well, I can tell you that I spent some rather significant time working
-this one out, but in the end this turned out to be yet another red
-herring.
+this one out, but in the end the alleged encoding problem turned out
+to be yet another red herring.
 
 You may recall that in Heat templates, we can use a function called
 [`str_replace`](https://docs.openstack.org/heat/latest/template_guide/hot_spec.html#str-replace)
