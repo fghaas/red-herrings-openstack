@@ -1,8 +1,40 @@
 # Heat templates and encoding <!-- .element: class="hidden" -->
 
 <!-- Note -->
-My third herring for you has to do with Heat templates. In particular,
-you may recall that in Heat templates, we can use a function called
+My third herring for you has to do with Heat templates. 
+
+
+## Encoding error <!-- .element: class="hidden" -->
+
+<!-- Note -->
+What I’m doing here is fire up a Heat template, and I get a
+nondescript HTTP 500. However, `--debug` will clarify that we are
+dealing with a server-side encoding error. In other words: the Heat
+API endpoint, not the client, is complaining that it’s been given a
+template with an invalid encoding. That sounds buggy, because if it
+actually *was* an incorrectly-encoded template, the Heat client should
+have caught that.
+
+And the additional information that we are getting here is pretty
+useless. We’re given an exact character that Heat is complaining
+about, but that one is definitely not incorrectly encoded.
+
+The funny part about this one is that I ran into it without making any
+changes to my template, which had previously worked quite all
+right. The only thing that *had* changed, when I first saw this
+problem, was that the OpenStack region I was running against had just
+been upgraded from Ocata to Pike. And I did have another Ocata region
+available, where the template ran fine, and I had other Pike-and-later
+regions, where it broke.
+
+So, surely this is a regression that somehow slipped past all the
+gates and CI checks?
+
+Well, I can tell you that I spent some rather significant time working
+this one out, but in the end this turned out to be yet another red
+herring.
+
+You may recall that in Heat templates, we can use a function called
 [`str_replace`](https://docs.openstack.org/heat/latest/template_guide/hot_spec.html#str-replace)
 for string templating. Here’s an example:
 
@@ -147,28 +179,11 @@ OpenStack region I launch this stack in, I can select a suitable
 Ubuntu mirror.
 
 And like I said, this particular template worked just fine up until
-Ocata, but as soon as I try to fire it up on any later release, I get
-this interesting error:
+Ocata, but as soon as I try to fire it up on any later release, I got
+that HTTP 500.
 
 
-## Encoding error <!-- .element: class="hidden" -->
-
-<!-- Note -->
-Now that’s a nondescript HTTP 500, but `--debug` will clarify that we
-are dealing with a server-side encoding error. In other words: the
-Heat API endpoint, not the client, is complaining that it’s been given
-a template with an invalid encoding. That sounds buggy, because if it
-actually *was* an incorrectly-encoded template, the Heat client should
-have caught that.
-
-And the additional information that we are getting here is pretty
-useless. We’re given an exact character that Heat is complaining
-about, but that one is definitely not incorrectly encoded.
-
-And I can tell you that I spent some rather significant time working
-this one out, but in the end this turned out to be yet another red
-herring.
-
+## Encoding fixed <!-- .element: class="hidden" -->
 
 ```yaml
 resources:
