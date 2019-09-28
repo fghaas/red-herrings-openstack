@@ -1,3 +1,4 @@
+<!-- .slide: data-background-image="images/magnum.svg" data-background-size="contain" -->
 # Magnum, Kubernetes, and image properties <!-- .element: class="hidden" -->
 
 <!-- Note -->

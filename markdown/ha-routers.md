@@ -1,3 +1,4 @@
+<!-- .slide: data-background-image="images/neutron.svg" data-background-size="contain" -->
 # 255 HA routers per tenant <!-- .element: class="hidden" --> 
 
 <!-- Note -->

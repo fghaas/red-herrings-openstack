@@ -1,3 +1,4 @@
+<!-- .slide: data-background-image="images/heat.svg" data-background-size="contain" -->
 # Heat templates and encoding <!-- .element: class="hidden" -->
 
 <!-- Note -->
