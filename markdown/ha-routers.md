@@ -6,7 +6,10 @@ OK. Let’s start out with something relatively straightforward: virtual
 routers in Neutron.
 
 
+<!-- .slide: data-background-color="#121314" -->
 ## Router creation in a loop <!-- .element: class="hidden" --> 
+
+<iframe src="https://asciinema.org/a/0bF0YsqMBvrdxtnAebsdeY9Gn/embed?size=big&rows=19&theme=tango&speed=0.5" class="stretch"></iframe>
 
 <!-- Note -->
 What I’m doing here is simply to create virtual routers, in a
@@ -18,7 +21,10 @@ And that seems to all work just dandy, _until_ suddenly it doesn’t.
 So let’s see what’s at fault here.
 
 
+<!-- .slide: data-background-color="#121314" -->
 ## Is this a quota issue? <!-- .element: class="hidden" --> 
+
+<iframe src="https://asciinema.org/a/EDo68t4g2HYzPvuf4tahtVGoO/embed?size=big&rows=19&theme=tango&speed=0.5" class="stretch"></iframe>
 
 <!-- Note -->
 Let’s start with the obvious assumption: I’m running into an
@@ -30,12 +36,8 @@ is, so if I look for my router quota, I see that...
 ... I can create 500 of them. Well, let’s see. Do I have more than 500
 routers already? Nope, it’s only 255. Besides, if we actually exceed a
 quota, what we ought to get back from Neutron is HTTP 413 rather than
-the HTTP 500 that we’re seeing.
+the HTTP 200 combined with a router ERROR status that we’re seeing.
 
-
-## Is this a configuration setting? <!-- .element: class="hidden" --> 
-
-<!-- Note -->
 So, dig further. Maybe Neutron has a configuration limit on the
 maximum number of routers per tenant, just like Heat has for stacks?
 
@@ -46,7 +48,10 @@ a tenant.
 So no, that doesn’t get us anywhere.
 
 
+<!-- .slide: data-background-color="#121314" -->
 ## What about HA routers? <!-- .element: class="hidden" --> 
+
+<iframe src="https://asciinema.org/a/iSfEdI3YcLS9d1EU6Nf5Wf5TB/embed?size=big&rows=19&theme=tango&speed=0.5" class="stretch"></iframe>
 
 <!-- Note -->
 So let’s try one thing, by way of experimentation. Let’s try and
@@ -80,6 +85,7 @@ apart all the keepalived instances that it manages on that network, it
 assigns each an individual Virtual Router ID or VRID.
 
 
+<!-- .slide: data-background-image="images/rfc5798-vrrp-packet-format.png" data-background-size="contain" -->
 ## RFC 5798 and VRIDs <!-- .element: class="hidden" --> 
 
 <!-- Note -->
