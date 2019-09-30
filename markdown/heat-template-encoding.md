@@ -5,7 +5,10 @@
 My third red herring for you has to do with Heat templates.
 
 
+<!-- .slide: data-background-color="#121314" -->
 ## Encoding error <!-- .element: class="hidden" -->
+
+<iframe src="https://asciinema.org/a/dSrLA3LG5fl28Kwa3wGjQm3Hf/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
 
 <!-- Note -->
 What I’m doing here is fire up a Heat template, and I get a
@@ -187,6 +190,40 @@ And like I said, this particular template worked just fine up until
 Ocata, but as soon as I try to fire it up on any later release, I got
 that HTTP 500.
 
+And now you may say, of course, hah! *Clearly* what’s happening here
+is that Heat is trying to parse the string `{mirror}` as an intrinsic
+function, which doesn’t exist. Well I have two answers for you.
+
+1. Masking an unknown function name behind `UnicodeDecodeError` would
+   be pretty silly.
+
+
+## str_replace example: apt_mirror with proper quotes <!-- .element: class="hidden" -->
+```yaml
+parameters:
+  ubuntu_mirror:
+    type: string
+    description: Ubuntu package archive mirror
+    default: us.archive.ubuntu.com
+  [...]
+
+resources:
+  base_config:
+    type: "OS::Heat::CloudConfig"
+    properties:
+      cloud_config:
+        apt_mirror:
+          str_replace:
+            template: "http://{mirror}/ubuntu"
+            params:
+              "{mirror}": { get_param: ubuntu_mirror }
+  [...]
+```
+
+<!-- Note -->
+2. If you *do* use proper quoting for the `template` string, you see
+   exactly the same problem.
+
 
 ## Encoding fixed <!-- .element: class="hidden" -->
 
@@ -206,6 +243,16 @@ resources:
 
 <!-- Note -->
 In reality, this is all it took. Using the `%` prefix did the
-trick. No Heat API problem. And to this day I still have no idea what
+trick:
+
+
+<!-- .slide: data-background-color="#121314" -->
+## Encoding fixed (screencast) <!-- .element: class="hidden" -->
+
+<iframe src="https://asciinema.org/a/18O1AruQjebK9qAUECs94YvCF/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
+
+
+<!-- Note -->
+No Heat API problem. And to this day I still have no idea what
 exactly made this break, specifically, between Ocata and Pike — but
 _something_ surely did.
