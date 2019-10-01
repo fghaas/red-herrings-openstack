@@ -61,6 +61,7 @@ Oh. Funny. Without HA it works, with HA it doesn’t. OK, what about HA
 routers, how do those work?
 
 
+<!-- .slide: data-background-image="images/harouter-vrrp.svg" data-background-size="contain" -->
 ## How do HA routers work, again? <!-- .element: class="hidden" --> 
 
 <!-- Note -->
@@ -124,8 +125,7 @@ first need to override the following default entries in Neutron’s
 policy.json:
 
 
-## HA routers and `policy.json`
-
+## HA routers and policy.json (default) <!-- .element: class="hidden" -->
 
 ```json
 {
@@ -138,6 +138,8 @@ policy.json:
 <!-- Note -->
 ... and instead set them as follows:
 
+
+## HA routers and policy.json (admin_or_owner) <!-- .element: class="hidden" -->
 
 ```json
 {
@@ -152,6 +154,8 @@ If your cloud service provider deploys Neutron with OpenStack-Ansible,
 they can define this in the following variable:
 
 
+## HA routers and policy.json (OSA configuration) <!-- .element: class="hidden" -->
+
 ```yaml
 neutron_policy_overrides:
     "create_router:ha": "rule:admin_or_owner"
@@ -164,6 +168,8 @@ Once the policy has been overridden in this manner, you should be able
 to create a new router with:
 
 
+## openstack router create --no-ha <!-- .element: class="hidden" -->
+
 ```bash
 openstack router create --no-ha <name>
 ```
@@ -171,6 +177,8 @@ openstack router create --no-ha <name>
 <!-- Note -->
 And modify an existing router’s high-availability flag with:
 
+
+## openstack router set --no-ha <!-- .element: class="hidden" -->
 
 ```bash
 openstack router set --disable <name>
@@ -193,14 +201,12 @@ Well, that’s another consequence of that default Neutron policy, in
 combination with rather unintuitive behavior by the openstack command
 line client. You see, this part of the aforementioned policy
 
-
 ```json
 {
     "get_router:ha": "rule:admin_only",
 }
 ```
 
-<!-- Note -->
 ... means you’re not even allowed to query the `ha` flag if you’re not
 an admin, and when the `openstack` client is asked to display a boolean
 value that the user is not allowed to even read, then it always
@@ -208,4 +214,3 @@ displays `False`.
 
 For further details, see
 <https://xahteiwi.eu/resources/hints-and-kinks/1000-routers-per-tenant-think-again/>.
-
