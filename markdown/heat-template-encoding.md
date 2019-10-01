@@ -251,7 +251,6 @@ trick:
 
 <iframe src="https://asciinema.org/a/18O1AruQjebK9qAUECs94YvCF/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
 
-
 <!-- Note -->
 No Heat API problem. And to this day I still have no idea what
 exactly made this break, specifically, between Ocata and Pike — but

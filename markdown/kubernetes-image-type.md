@@ -48,6 +48,7 @@ what I’m getting is this nondescript HTTP 400 error.
 
 
 <!-- .slide: data-background-color="#121314" data-background-image="//http.cat/400.jpg" data-background-size="contain" -->
+## HTTP 400 from Magnum <!-- .element: class="hidden" -->
 
 <!-- Note --> 
 So HTTP 400 is Bad Request. Clearly, that means that something is
