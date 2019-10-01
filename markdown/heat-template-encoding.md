@@ -1,8 +1,48 @@
+<!-- .slide: data-background-image="images/heat.svg" data-background-size="contain" -->
 # Heat templates and encoding <!-- .element: class="hidden" -->
 
 <!-- Note -->
-My third herring for you has to do with Heat templates. In particular,
-you may recall that in Heat templates, we can use a function called
+My third red herring for you has to do with Heat templates.
+
+
+<!-- .slide: data-background-color="#121314" -->
+## Encoding error <!-- .element: class="hidden" -->
+
+<iframe src="https://asciinema.org/a/dSrLA3LG5fl28Kwa3wGjQm3Hf/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
+
+<!-- Note -->
+What I’m doing here is fire up a Heat template, and I get a
+nondescript HTTP 500. However, `--debug` will clarify that we are
+dealing with a server-side encoding error. In other words: the Heat
+API endpoint, not the client, is complaining that it’s been given a
+template with an invalid encoding. That sounds buggy, because if it
+actually *was* an incorrectly-encoded template, the Heat client should
+have caught that.
+
+And the additional information that we are getting here is pretty
+useless. We’re given an exact character that Heat is complaining
+about, but that one is definitely not incorrectly encoded.
+
+
+## A regression?
+
+<!-- Note -->
+The funny part about this one is that I ran into it without making any
+changes to my template, which had previously worked quite all
+right. The only thing that *had* changed, when I first saw this
+problem, was that the OpenStack region I was running against had just
+been upgraded from Ocata to Pike. And I did have another Ocata region
+available, where the template ran fine, and I had other Pike-and-later
+regions, where it broke.
+
+So, surely this is a regression that somehow slipped past all the
+gates and CI checks?
+
+Well, I can tell you that I spent some rather significant time working
+this one out, but in the end the alleged encoding problem turned out
+to be yet another red herring.
+
+You may recall that in Heat templates, we can use a function called
 [`str_replace`](https://docs.openstack.org/heat/latest/template_guide/hot_spec.html#str-replace)
 for string templating. Here’s an example:
 
@@ -147,28 +187,45 @@ OpenStack region I launch this stack in, I can select a suitable
 Ubuntu mirror.
 
 And like I said, this particular template worked just fine up until
-Ocata, but as soon as I try to fire it up on any later release, I get
-this interesting error:
+Ocata, but as soon as I try to fire it up on any later release, I got
+that HTTP 500.
+
+And now you may say, of course, hah! *Clearly* what’s happening here
+is that Heat is trying to parse the string `{mirror}` as an intrinsic
+function, which doesn’t exist. Well I have two answers for you.
+
+1. Masking an unknown function name behind `UnicodeDecodeError` would
+   be pretty silly.
 
 
-## Encoding error <!-- .element: class="hidden" -->
+## str_replace example: apt_mirror with proper quotes <!-- .element: class="hidden" -->
+```yaml
+parameters:
+  ubuntu_mirror:
+    type: string
+    description: Ubuntu package archive mirror
+    default: us.archive.ubuntu.com
+  [...]
+
+resources:
+  base_config:
+    type: "OS::Heat::CloudConfig"
+    properties:
+      cloud_config:
+        apt_mirror:
+          str_replace:
+            template: "http://{mirror}/ubuntu"
+            params:
+              "{mirror}": { get_param: ubuntu_mirror }
+  [...]
+```
 
 <!-- Note -->
-Now that’s a nondescript HTTP 500, but `--debug` will clarify that we
-are dealing with a server-side encoding error. In other words: the
-Heat API endpoint, not the client, is complaining that it’s been given
-a template with an invalid encoding. That sounds buggy, because if it
-actually *was* an incorrectly-encoded template, the Heat client should
-have caught that.
+2. If you *do* use proper quoting for the `template` string, you see
+   exactly the same problem.
 
-And the additional information that we are getting here is pretty
-useless. We’re given an exact character that Heat is complaining
-about, but that one is definitely not incorrectly encoded.
 
-And I can tell you that I spent some rather significant time working
-this one out, but in the end this turned out to be yet another red
-herring.
-
+## Encoding fixed <!-- .element: class="hidden" -->
 
 ```yaml
 resources:
@@ -186,6 +243,15 @@ resources:
 
 <!-- Note -->
 In reality, this is all it took. Using the `%` prefix did the
-trick. No Heat API problem. And to this day I still have no idea what
+trick:
+
+
+<!-- .slide: data-background-color="#121314" -->
+## Encoding fixed (screencast) <!-- .element: class="hidden" -->
+
+<iframe src="https://asciinema.org/a/18O1AruQjebK9qAUECs94YvCF/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
+
+<!-- Note -->
+No Heat API problem. And to this day I still have no idea what
 exactly made this break, specifically, between Ocata and Pike — but
 _something_ surely did.

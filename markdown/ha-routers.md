@@ -1,3 +1,4 @@
+<!-- .slide: data-background-image="images/neutron.svg" data-background-size="contain" -->
 # 255 HA routers per tenant <!-- .element: class="hidden" --> 
 
 <!-- Note -->
@@ -5,7 +6,10 @@ OK. Let’s start out with something relatively straightforward: virtual
 routers in Neutron.
 
 
+<!-- .slide: data-background-color="#121314" -->
 ## Router creation in a loop <!-- .element: class="hidden" --> 
+
+<iframe src="https://asciinema.org/a/0bF0YsqMBvrdxtnAebsdeY9Gn/embed?size=big&rows=19&theme=tango&speed=0.5" class="stretch"></iframe>
 
 <!-- Note -->
 What I’m doing here is simply to create virtual routers, in a
@@ -17,7 +21,10 @@ And that seems to all work just dandy, _until_ suddenly it doesn’t.
 So let’s see what’s at fault here.
 
 
+<!-- .slide: data-background-color="#121314" -->
 ## Is this a quota issue? <!-- .element: class="hidden" --> 
+
+<iframe src="https://asciinema.org/a/EDo68t4g2HYzPvuf4tahtVGoO/embed?size=big&rows=19&theme=tango&speed=0.5" class="stretch"></iframe>
 
 <!-- Note -->
 Let’s start with the obvious assumption: I’m running into an
@@ -29,12 +36,8 @@ is, so if I look for my router quota, I see that...
 ... I can create 500 of them. Well, let’s see. Do I have more than 500
 routers already? Nope, it’s only 255. Besides, if we actually exceed a
 quota, what we ought to get back from Neutron is HTTP 413 rather than
-the HTTP 500 that we’re seeing.
+the HTTP 200 combined with a router ERROR status that we’re seeing.
 
-
-## Is this a configuration setting? <!-- .element: class="hidden" --> 
-
-<!-- Note -->
 So, dig further. Maybe Neutron has a configuration limit on the
 maximum number of routers per tenant, just like Heat has for stacks?
 
@@ -45,7 +48,10 @@ a tenant.
 So no, that doesn’t get us anywhere.
 
 
+<!-- .slide: data-background-color="#121314" -->
 ## What about HA routers? <!-- .element: class="hidden" --> 
+
+<iframe src="https://asciinema.org/a/iSfEdI3YcLS9d1EU6Nf5Wf5TB/embed?size=big&rows=19&theme=tango&speed=0.5" class="stretch"></iframe>
 
 <!-- Note -->
 So let’s try one thing, by way of experimentation. Let’s try and
@@ -55,6 +61,7 @@ Oh. Funny. Without HA it works, with HA it doesn’t. OK, what about HA
 routers, how do those work?
 
 
+<!-- .slide: data-background-image="images/harouter-vrrp.svg" data-background-size="contain" -->
 ## How do HA routers work, again? <!-- .element: class="hidden" --> 
 
 <!-- Note -->
@@ -79,6 +86,7 @@ apart all the keepalived instances that it manages on that network, it
 assigns each an individual Virtual Router ID or VRID.
 
 
+<!-- .slide: data-background-image="images/rfc5798-vrrp-packet-format.png" data-background-size="contain" -->
 ## RFC 5798 and VRIDs <!-- .element: class="hidden" --> 
 
 <!-- Note -->
@@ -117,8 +125,7 @@ first need to override the following default entries in Neutron’s
 policy.json:
 
 
-## HA routers and `policy.json`
-
+## HA routers and policy.json (default) <!-- .element: class="hidden" -->
 
 ```json
 {
@@ -131,6 +138,8 @@ policy.json:
 <!-- Note -->
 ... and instead set them as follows:
 
+
+## HA routers and policy.json (admin_or_owner) <!-- .element: class="hidden" -->
 
 ```json
 {
@@ -145,6 +154,8 @@ If your cloud service provider deploys Neutron with OpenStack-Ansible,
 they can define this in the following variable:
 
 
+## HA routers and policy.json (OSA configuration) <!-- .element: class="hidden" -->
+
 ```yaml
 neutron_policy_overrides:
     "create_router:ha": "rule:admin_or_owner"
@@ -157,6 +168,8 @@ Once the policy has been overridden in this manner, you should be able
 to create a new router with:
 
 
+## openstack router create --no-ha <!-- .element: class="hidden" -->
+
 ```bash
 openstack router create --no-ha <name>
 ```
@@ -164,6 +177,8 @@ openstack router create --no-ha <name>
 <!-- Note -->
 And modify an existing router’s high-availability flag with:
 
+
+## openstack router set --no-ha <!-- .element: class="hidden" -->
 
 ```bash
 openstack router set --disable <name>
@@ -186,14 +201,12 @@ Well, that’s another consequence of that default Neutron policy, in
 combination with rather unintuitive behavior by the openstack command
 line client. You see, this part of the aforementioned policy
 
-
 ```json
 {
     "get_router:ha": "rule:admin_only",
 }
 ```
 
-<!-- Note -->
 ... means you’re not even allowed to query the `ha` flag if you’re not
 an admin, and when the `openstack` client is asked to display a boolean
 value that the user is not allowed to even read, then it always
@@ -201,4 +214,3 @@ displays `False`.
 
 For further details, see
 <https://xahteiwi.eu/resources/hints-and-kinks/1000-routers-per-tenant-think-again/>.
-

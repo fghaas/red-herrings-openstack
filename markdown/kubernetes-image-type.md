@@ -1,3 +1,4 @@
+<!-- .slide: data-background-image="images/magnum.svg" data-background-size="contain" -->
 # Magnum, Kubernetes, and image properties <!-- .element: class="hidden" -->
 
 <!-- Note -->
@@ -13,46 +14,41 @@ to run a Kubernetes cluster are
 3. Finally, you can use the template to spin up the cluster.
 
 
-## Fedora Atomic 27 image <!-- .element: class="hidden" -->
+<!-- .slide: data-background-color="#121314" -->
+## Kubernetes 1.15.3 on Fedora Atomic 27 <!-- .element: class="hidden" -->
+
+<iframe src="https://asciinema.org/a/ijCMCBowtxaZvpZVmHwHOqwZv/embed?size=big&rows=19&cols=60&theme=tango&speed=0.2" class="stretch"></iframe>
 
 <!-- Note --> 
 OK, so let’s look at that. Here’s my image. It’s a Fedora Atomic Host
 27 image, which should be totally supported to deploy Kubernetes
 1.15.3 with Magnum.
 
-
-## Kubernetes 1.15.3 template <!-- .element: class="hidden" -->
-
-<!-- Note --> 
 And here is my cluster template. It sets the cluster orchestration
 engine (COE) to `kubernetes`, and the `kube_tag` label to v1.15.3,
 which means that Magnum installs that Kubernetes release.
 
-
-## Kubernetes 1.15.3 spin-up <!-- .element: class="hidden" -->
-
-<!-- Note --> 
 All right, wonderful. My cluster is spinning up exactly as expected.
 
 *But*, I really want to use a more current Fedora Atomic image
 instead, such as Fedora Atomic Host 29. 
 
 
+<!-- .slide: data-background-color="#121314" -->
 ## Fedora Atomic 29 image <!-- .element: class="hidden" -->
+
+<iframe src="https://asciinema.org/a/IDF78b4U70LQIQnYwuFLBZ0cT/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
 
 <!-- Note --> 
 Now to do that, I‘ve uploaded a Fedora Atomic 29 image. Again,
 deploying Kubernetes off of this should totally work.
 
-
-## Kubernetes 1.15.3 / F29 template <!-- .element: class="hidden" -->
-
-<!-- Note --> 
 But this is weird. Everything is set up exactly as it should be, and
 what I’m getting is this nondescript HTTP 400 error.
 
 
-<!-- .slide: data-background-image="//http.cat/400.jpg" data-background-size="contain" -->
+<!-- .slide: data-background-color="#121314" data-background-image="//http.cat/400.jpg" data-background-size="contain" -->
+## HTTP 400 from Magnum <!-- .element: class="hidden" -->
 
 <!-- Note --> 
 So HTTP 400 is Bad Request. Clearly, that means that something is
@@ -63,7 +59,10 @@ in the Magnum client library, or the `openstack` client, right?
 Well, wrong again. Another red herring.
 
 
+<!-- .slide: data-background-color="#121314" -->
 ## Fedora 29 image properties <!-- .element: class="hidden" -->
+
+<iframe src="https://asciinema.org/a/LdEJRK58H4eWqSFP9uSW5VyCa/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
 
 <!-- Note --> 
 Turns out that the culprit is actually a missing property on the
@@ -76,21 +75,9 @@ but many Magnum users never need to use a private image, and when they
 do, the missing property (and unhelpful error message) often trips
 them up. 
 
+Once we set this variable, we’re ready to create our cluster template.
 
-## Fedora 29 image with `os_distro` <!-- .element: class="hidden" -->
-
-<!-- Note --> 
-Once we set this variable, we’re ready to create our cluster template:
-
-
-## Fedora 29-based cluster template <!-- .element: class="hidden" -->
-
-<!-- Note --> 
 And once we’ve got the template, we can fire up a new cluster:
 
-
-## Fedora 29-based cluster <!-- .element: class="hidden" -->
-
-<!-- Note --> 
 ... and then we can use Kubernetes from there.
 
