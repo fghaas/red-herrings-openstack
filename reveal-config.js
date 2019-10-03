@@ -4,10 +4,10 @@ Reveal.initialize({
 
     controls: true,
 
-    progress: false,
+    progress: true,
     history: true,
     center: true,
-    showNotes: false,
+    showNotes: true,
 
 
     transition: 'fade',
