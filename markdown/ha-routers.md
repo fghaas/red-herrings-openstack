@@ -9,7 +9,7 @@ routers in Neutron.
 <!-- .slide: data-background-color="#121314" -->
 ## Router creation in a loop <!-- .element: class="hidden" --> 
 
-<iframe src="https://asciinema.org/a/0bF0YsqMBvrdxtnAebsdeY9Gn/embed?size=big&rows=19&theme=tango&speed=0.5" class="stretch"></iframe>
+<iframe src="https://asciinema.org/a/0bF0YsqMBvrdxtnAebsdeY9Gn/embed?size=big&rows=19&theme=tango&speed=1.2" class="stretch"></iframe>
 
 <!-- Note -->
 What I’m doing here is simply to create virtual routers, in a
