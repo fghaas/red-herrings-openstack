@@ -6,6 +6,9 @@ Step with me into a time machine. A contraption that can transport you
 to any event in spacetime, which in this case is 44 years ago, and
 just under 300km away from here.
 
+**Disclaimer:** minor details of this story have been dramatized for
+better storytelling effect.
+
 
 ## October 10, 1975
 
