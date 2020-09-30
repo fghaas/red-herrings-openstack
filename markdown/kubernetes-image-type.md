@@ -17,7 +17,7 @@ to run a Kubernetes cluster are
 <!-- .slide: data-background-color="#121314" -->
 ## Kubernetes 1.15.3 on Fedora Atomic 27 <!-- .element: class="hidden" -->
 
-<iframe src="https://asciinema.org/a/ijCMCBowtxaZvpZVmHwHOqwZv/embed?size=big&rows=19&cols=60&theme=tango&speed=0.2" class="stretch"></iframe>
+<iframe src="https://asciinema.org/a/ijCMCBowtxaZvpZVmHwHOqwZv/embed?size=big&rows=19&cols=60&theme=tango" class="stretch"></iframe>
 
 <!-- Note --> 
 OK, so let’s look at that. Here’s my image. It’s a Fedora Atomic Host
@@ -37,7 +37,7 @@ instead, such as Fedora Atomic Host 29.
 <!-- .slide: data-background-color="#121314" -->
 ## Fedora Atomic 29 image <!-- .element: class="hidden" -->
 
-<iframe src="https://asciinema.org/a/IDF78b4U70LQIQnYwuFLBZ0cT/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
+<iframe src="https://asciinema.org/a/IDF78b4U70LQIQnYwuFLBZ0cT/embed?size=big&rows=19&cols=60&theme=tango" class="stretch"></iframe>
 
 <!-- Note --> 
 Now to do that, I‘ve uploaded a Fedora Atomic 29 image. Again,
@@ -62,7 +62,7 @@ Well, wrong again. Another red herring.
 <!-- .slide: data-background-color="#121314" -->
 ## Fedora 29 image properties <!-- .element: class="hidden" -->
 
-<iframe src="https://asciinema.org/a/LdEJRK58H4eWqSFP9uSW5VyCa/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
+<iframe src="https://asciinema.org/a/LdEJRK58H4eWqSFP9uSW5VyCa/embed?size=big&rows=19&cols=60&theme=tango" class="stretch"></iframe>
 
 <!-- Note --> 
 Turns out that the culprit is actually a missing property on the
