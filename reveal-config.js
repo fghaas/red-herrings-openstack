@@ -10,7 +10,7 @@ Reveal.initialize({
     showNotes: false,
 
 
-    transition: 'fade',
+    transition: 'none',
 
     totalTime: 20*60,
 
