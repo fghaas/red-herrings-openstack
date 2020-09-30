@@ -3,7 +3,7 @@ Red Herrings in OpenStack
 
 * * *
 
-Open Infra Days Nordics, 2019-10-03
+Open Infrastructure Summit 2020
 
 * * *
 
