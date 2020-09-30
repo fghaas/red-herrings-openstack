@@ -163,8 +163,7 @@ suffering from a rather bad case of hypothermia, the symptoms of which
 include incoherence, slurred speech, and violent shivers.
 
 
-<!-- .slide: data-background-color="black" data-background-size="contain" -->
-## Nothing but wrong assumptions <!-- .element: class="hidden" -->
+## Nothing but wrong assumptions
 
 <!-- Note -->
 And the reason I’m telling you this is that absolutely every single
@@ -188,8 +187,7 @@ And of course, Sweden was not at war with the Soviet Union, and
 nuclear armageddon wasn’t imminent.
 
 
-<!-- .slide: data-background-color="black" data-background-size="contain" -->
-## Lessons learned <!-- .element: class="hidden" -->
+## No (real) harm done
 
 <!-- Note -->
 Thankfully for the doctor, none of the decisions he made based on his
@@ -207,8 +205,7 @@ permanently influenced his later thinking: always challenge your own
 assumptions.
 
 
-<!-- .slide: data-background-color="black" data-background-size="contain" -->
-## What became of the doctor <!-- .element: class="hidden" -->
+## What became of the doctor?
 
 <!-- Note -->
 The young doctor incidentally became a very famous man with this
