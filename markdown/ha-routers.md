@@ -24,7 +24,7 @@ So let’s see what’s at fault here.
 <!-- .slide: data-background-color="#121314" -->
 ## Is this a quota issue? <!-- .element: class="hidden" --> 
 
-<iframe src="https://asciinema.org/a/EDo68t4g2HYzPvuf4tahtVGoO/embed?size=big&rows=19&theme=tango&speed=0.5" class="stretch"></iframe>
+<iframe src="https://asciinema.org/a/EDo68t4g2HYzPvuf4tahtVGoO/embed?size=big&rows=19&theme=tango" class="stretch"></iframe>
 
 <!-- Note -->
 Let’s start with the obvious assumption: I’m running into an
@@ -51,7 +51,7 @@ So no, that doesn’t get us anywhere.
 <!-- .slide: data-background-color="#121314" -->
 ## What about HA routers? <!-- .element: class="hidden" --> 
 
-<iframe src="https://asciinema.org/a/iSfEdI3YcLS9d1EU6Nf5Wf5TB/embed?size=big&rows=19&theme=tango&speed=0.5" class="stretch"></iframe>
+<iframe src="https://asciinema.org/a/iSfEdI3YcLS9d1EU6Nf5Wf5TB/embed?size=big&rows=19&theme=tango" class="stretch"></iframe>
 
 <!-- Note -->
 So let’s try one thing, by way of experimentation. Let’s try and

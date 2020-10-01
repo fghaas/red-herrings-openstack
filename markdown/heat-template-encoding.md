@@ -8,7 +8,7 @@ My third red herring for you has to do with Heat templates.
 <!-- .slide: data-background-color="#121314" -->
 ## Encoding error <!-- .element: class="hidden" -->
 
-<iframe src="https://asciinema.org/a/dSrLA3LG5fl28Kwa3wGjQm3Hf/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
+<iframe src="https://asciinema.org/a/dSrLA3LG5fl28Kwa3wGjQm3Hf/embed?size=big&rows=19&cols=60&theme=tango" class="stretch"></iframe>
 
 <!-- Note -->
 What I’m doing here is fire up a Heat template, and I get a
@@ -249,7 +249,7 @@ trick:
 <!-- .slide: data-background-color="#121314" -->
 ## Encoding fixed (screencast) <!-- .element: class="hidden" -->
 
-<iframe src="https://asciinema.org/a/18O1AruQjebK9qAUECs94YvCF/embed?size=big&rows=19&cols=60&theme=tango&speed=0.5" class="stretch"></iframe>
+<iframe src="https://asciinema.org/a/18O1AruQjebK9qAUECs94YvCF/embed?size=big&rows=19&cols=60&theme=tango" class="stretch"></iframe>
 
 <!-- Note -->
 No Heat API problem. And to this day I still have no idea what

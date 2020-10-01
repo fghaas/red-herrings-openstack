@@ -3,8 +3,8 @@
 
 <!-- Note -->
 Step with me into a time machine. A contraption that can transport you
-to any event in spacetime, which in this case is 44 years ago, and
-just under 300km away from here.
+to any event in spacetime, which in this case is 45 years ago in a
+quaint and quiet Swedish small town.
 
 **Disclaimer:** minor details of this story have been dramatized for
 better storytelling effect.
@@ -21,7 +21,7 @@ The day is October 10, 1975.
 
 <!-- Note -->
 And on this autumn Friday, a young doctor, fresh out of medical
-school, is on shift in the emergencies and accidents ward in the
+school, is on shift in the accidents and emergencies ward in the
 hospital of a Swedish coastal town of about 35,000 people.
 
 It’s been a very calm morning, and it’s now lunchtime and most of the
@@ -35,8 +35,8 @@ cafeteria for lunch. Everything looks and feels very routine.
 <!-- Note -->
 And then suddenly, the phone rings. The hospital is being advised by
 emergency responders that a plane crash has occurred in the vicinity,
-and that the hospital will imminently receive the first casualties,
-by helicopter.
+and that the arrival of the first casualties, by helicopter, is
+imminent.
 
 As soon as the young doctor hangs up, he grabs a nurse and they race
 over to the shelf with the binders containing the emergency
@@ -85,10 +85,10 @@ responding, but to the doctor the picture is clear: this is a Soviet
 pilot who is understandably terrified that he’s been shot down over
 hostile territory. 
 
-And the comes to a dismal conclusion: if we’re shooting down Soviet
-jets, then we’re probably at war with the Soviet Union. And *that,* in
-turn, means that we’re probably in the opening minutes of World War
-III (remember, this is 1975).
+And the doctor comes to a dismal conclusion: if we’re shooting down
+Soviet jets, then we’re probably at war with the Soviet Union. And
+*that,* in turn, means that we’re probably in the opening minutes of
+World War III (remember, this is 1975).
 
 
 <!-- .slide: data-background-image="images/blood.jpg" data-background-size="cover" -->
@@ -152,18 +152,18 @@ The patient who, it turns out, is a Swedish air force pilot who was
 forced to eject from his Saab AJ 37 Viggen strike fighter, tail
 number 37005. 
 
-He had been on a routine training flight over the Baltic sea, when
-lost control of his plane to a structural failure — a _wing fracture,_
-a problem which plagued the airframe in the mid-70s — and who was
-pulled out of the 8°C water by a search-and-rescue team. 
+He had been on a routine training flight over the Baltic sea, when he
+lost control of his plane due to a structural failure — a _wing
+fracture,_ a problem which plagued the airframe in the mid-70s — and
+who was pulled out of the 8-degrees-Celsius water by a
+search-and-rescue team.
 
 Which flew him promptly to the nearest hospital because he was
 suffering from a rather bad case of hypothermia, the symptoms of which
 include incoherence, slurred speech, and violent shivers.
 
 
-<!-- .slide: data-background-color="black" data-background-size="contain" -->
-## Nothing but wrong assumptions <!-- .element: class="hidden" -->
+## Nothing but wrong assumptions
 
 <!-- Note -->
 And the reason I’m telling you this is that absolutely every single
@@ -187,18 +187,17 @@ And of course, Sweden was not at war with the Soviet Union, and
 nuclear armageddon wasn’t imminent.
 
 
-<!-- .slide: data-background-color="black" data-background-size="contain" -->
-## Lessons learned <!-- .element: class="hidden" -->
+## No (real) harm done
 
 <!-- Note -->
 Thankfully for the doctor, none of the decisions he made based on his
 wildly inaccurate assumptions actually harmed anyone — other than, of
 course, scaring the living daylights out of Swedish Air Force Reserve
 Lt Harald Gatel, who after what must have already been the worst day
-of his flying career, came to to find out that rather than being pulled
-from the Baltic Sea by his collegues, he’d been presumably abducted by
-a team of Spetsnaz and spirited away to somewhere where the doctors
-only spoke Russian.
+of his flying career, came to just to find out that rather than being
+pulled from the Baltic Sea by his Swedish Navy comrades, he’d been
+presumably abducted by a team of Spetsnaz and spirited away to
+somewhere where the doctors only spoke Russian.
 
 And he reflected later in life that he was actually quite thankful for
 this inconsequential mishap early in his career, as it profoundly and
@@ -206,8 +205,7 @@ permanently influenced his later thinking: always challenge your own
 assumptions.
 
 
-<!-- .slide: data-background-color="black" data-background-size="contain" -->
-## What became of the doctor <!-- .element: class="hidden" -->
+## What became of the doctor?
 
 <!-- Note -->
 The young doctor incidentally became a very famous man with this
