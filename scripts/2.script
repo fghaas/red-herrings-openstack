@@ -1,0 +1,33 @@
+Script started on 2019-09-30 11:31:10+0200
+bash-4.4$ vi lab.yaml bash-4.4$ openstack stack create -e city-fra1.yaml -t lab.yaml testbash-4.4$ vi lab.yaml [K
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"lab.yaml" 708L, 23436C[2;1H½[6n[2;1H  [1;1H[>c]10;?]11;?[1;7H[36msave_private_key[m[35m:[m [31mtrue[m
+
+ [34m # The configuration to be applied to all nodes, going first in the
+[m [34m # order of precedence[m
+  [36mbase_config[m[35m:[m
+    [36mtype[m[35m:[m [31m"OS::Heat::CloudConfig"[m
+    [36mproperties[m[35m:[m[8;7H[36mcloud_config[m[35m:[m[9;9H[36mmerge_how[m[35m:[m [31m'dict(recurse_array,no_replace)+list(append)'[m[10;9H[36mbootcmd[m[35m:[m[11;11H[33m- [mapt-get --yes remove --purge lxd lxd-* mdadm plymouth snap*[12;9H[36mapt_mirror[m[35m:[m[13;11H[36mstr_replace[m[35m:[m[14;13H[36mtemplate[m[35m:[m http://%mirror/ubuntu[15;13H[36mparams[m[35m:[m[16;15H[31m"%mirror"[m[35m:[m [35m{[m [36mget_param[m[35m:[m ubuntu_mirror [35m}[m[17;9H[36mpackage_update[m[35m:[m [31mtrue[m[18;9H[36mpackage_upgrade[m[35m:[m [31mtrue[m[19;9H[36musers[m[35m:[m[20;11H[33m- [mdefault[21;11H[33m- [m[36mname[m[35m:[m training[22;13H[36mgroups[m[35m:[m users,adm[23;13H[36mlock-passwd[m[35m:[m [31mfalse[m[24;63H91,1[10C11%[12;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[24;53HV[12;1H[24;53H1[12;1H [7m       [m[7m[36mapt_mirror[m[7m[35m:[m[7m [m[24;1H[1m-- VISUAL LINE --[m[24;18H[K[24;53H1[12;1H[24;63H91,1[10C11%[12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H2  [13;1H[12;1H[7m 
+[m [7m         [m[7m[36mstr_replace[m[7m[35m:[m[7m [m[24;64H2[13;1H[?25h[?25l[24;53H~@k[13;1H[24;53H3  [14;1H[13;1H[7m 
+[m [7m           [m[7m[36mtemplate[m[7m[35m:[m[7m http://%mirror/ubuntu [m[24;64H3[14;1H[?25h[?25l[24;53H~@k[14;1H[24;53H4  [15;1H[14;1H[7m 
+[m [7m           [m[7m[36mparams[m[7m[35m:[m[7m [m[24;64H4[15;1H[?25h[?25l[24;53H~@k[15;1H[24;53H5  [16;1H[15;1H[7m 
+[m [7m             [m[7m[31m"%mirror"[m[7m[35m:[m[7m [m[7m[35m{[m[7m [m[7m[36mget_param[m[7m[35m:[m[7m ubuntu_mirror [m[7m[35m}[m[7m [m[24;64H5[16;1H[?25h[?25l[24;53H:[16;1H[24;53H [12;1H[24;1H[K[24;1H:[?2004h'<,'>[?25h[?25l[24;1H[K[12;1H        [36mapt_mirror[m[35m:[m[12;20H[K[13;1H          [36mstr_replace[m[35m:[m[13;23H[K[14;1H            [36mtemplate[m[35m:[m http://%mirror/ubuntu[14;44H[K[15;1H            [36mparams[m[35m:[m[15;20H[K[16;2H             [31m"%mirror"[m[35m:[m [35m{[m [36mget_param[m[35m:[m ubuntu_mirror [35m}[m[16;54H[K[24;63H91,1[10C11%[12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H   [11;1H[24;64H0[11;1H[?25h[?25l[24;53H:[11;1H[24;53H[K[24;1H:[?2004h[?25hq[?25l[?2004l[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tbash-4.4$ (reverse-i-search)`': c': openstack stack create -e city-fra1.yaml -t lab.yaml test [Areverse-i-search)`c': openstack stack create -e (reverse-i-search)`cr': openstack stack create -e city-fra1.yaml -t lab.yaml testt[Areverse-i-search)`cr': openstack stack e': openstack stack create -e city-fra1.yaml -t lab.yaml test[Aeverse-i-search)`cre': openstack stack [13Pbash-4.4$ openstack stack create -e city-fra1.yaml -t lab.yaml test
+[K[Abash-4.4$ openstack stack 
++---------------------+-----------------------------------------------------------------+
+| Field               | Value                                                           |
++---------------------+-----------------------------------------------------------------+
+| id                  | 78d74f74-315d-43ce-b091-18156419b1ec                            |
+| stack_name          | test                                                            |
+| description         | Ceph lab environment.                                           |
+|                     | - Consists of one deployment host (deploy) and three Ceph hosts |
+|                     |   (daisy, eric, frank).                                         |
+|                     | - Provides two separate networks to allow for Ceph              |
+|                     |   public_network/cluster_network separation.                    |
+|                     |                                                                 |
+| creation_time       | 2019-09-30T09:31:35Z                                            |
+| updated_time        | None                                                            |
+| stack_status        | CREATE_IN_PROGRESS                                              |
+| stack_status_reason | Stack CREATE started                                            |
++---------------------+-----------------------------------------------------------------+
+bash-4.4$ exit
+
+Script done on 2019-09-30 11:31:43+0200

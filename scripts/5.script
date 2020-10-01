@@ -1,0 +1,63 @@
+Script started on 2019-09-30 13:40:41+0200
+bash-4.4$ openstack image set --property os_distro=fedora-atomic \
+>   "Fedora Atomic 29"
+bash-4.4$ openstack coe cluster template create \
+>   --coe kubernetes  \
+>   --image "Fedora Atomic 29" \
+>   --flavor 2C-2GB-20GB \
+>   --master-flavor 2C-2GB-20GB \
+>   --volume-driver cinder \
+>   --docker-storage-driver overlay \
+>   --external-network ext-net \
+>   --floating-ip-enabled \
+>   --network-driver flannel \
+>   --docker-volume-size 5 \
+>   --dns-nameserver 8.8.8.8 \
+>   --label kube_tag=v1.15.3 \
+>   kubernetes-1.15.3-f29
+Request to create cluster template kubernetes-1.15.3-f29 accepted
++-----------------------+--------------------------------------+
+| Field                 | Value                                |
++-----------------------+--------------------------------------+
+| insecure_registry     | -                                    |
+| labels                | {'kube_tag': 'v1.15.3'}              |
+| updated_at            | -                                    |
+| floating_ip_enabled   | True                                 |
+| fixed_subnet          | -                                    |
+| master_flavor_id      | 2C-2GB-20GB                          |
+| uuid                  | efb145b8-1cf8-4147-8c5b-95d01e74fc5c |
+| no_proxy              | -                                    |
+| https_proxy           | -                                    |
+| tls_disabled          | False                                |
+| keypair_id            | -                                    |
+| public                | False                                |
+| http_proxy            | -                                    |
+| docker_volume_size    | 5                                    |
+| server_type           | vm                                   |
+| external_network_id   | ext-net                              |
+| cluster_distro        | fedora-atomic                        |
+| image_id              | Fedora Atomic 29                     |
+| volume_driver         | cinder                               |
+| registry_enabled      | False                                |
+| docker_storage_driver | overlay                              |
+| apiserver_port        | -                                    |
+| name                  | kubernetes-1.15.3-f29                |
+| created_at            | 2019-09-30T11:40:58.860881+00:00     |
+| network_driver        | flannel                              |
+| fixed_network         | -                                    |
+| coe                   | kubernetes                           |
+| flavor_id             | 2C-2GB-20GB                          |
+| master_lb_enabled     | False                                |
+| dns_nameserver        | 8.8.8.8                              |
++-----------------------+--------------------------------------+
+bash-4.4$ openstack coe cluster create  \
+>   --cluster-template kubernetes-1.15.3-f29 \
+>   --master-count 1 \
+>   --node-count 1 \
+>   --timeout 60 \
+>   --keypair florian \
+>   kubernetes-1.15.3-f29-test 
+Request to create cluster 13cb4b7b-320d-4e91-9d5e-e07eb5d420c6 accepted
+bash-4.4$ exit
+
+Script done on 2019-09-30 13:41:20+0200
